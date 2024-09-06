@@ -32,5 +32,6 @@ jobs:
             img2simg
 
       - name: Set up Android build environment
-        run: |          
+        run: | 
+          echo "yes"
           curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
