@@ -43,21 +43,4 @@ jobs:
         run: |
           mkdir -p $HOME/android
           cd $HOME/android
-          git clone https://android.googlesource.com/platform/manifest
-          cd manifest
-          repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r1
-          repo sync -j$(nproc)
-
-      - name: Build the ROM
-        run: |
-          cd $HOME/android
-          source build/envsetup.sh
-          lunch aosp_arm-eng
-          m -j$(nproc)
-          
-      - name: Archive Build Artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: android-rom
-          path: $HOME/android/out/target/product/*
-          
+          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
