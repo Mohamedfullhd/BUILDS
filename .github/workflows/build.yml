@@ -33,6 +33,22 @@ jobs:
 
       - name: Set up Android build environment
         run: |
-          mkdir -p $HOME/android
-          cd $HOME/android
-          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
+          cd ~/
+          wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+          # add Android SDK platform tools to path
+         if [ -d "$HOME/platform-tools" ] ; then
+         PATH="$HOME/platform-tools:$PATH"
+         fi
+         source ~/.profile
+         cd ~/
+         git clone https://github.com/akhilnarang/scripts
+         cd scripts
+         ./setup/android_build_env.sh
+         cd ~/
+         mkdir -p ~/bin
+         mkdir -p ~/android
+         curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+         chmod a+x ~/bin/repo
+         git config --global user.email "salitagwapo@gmail.com"
+         git config --global user.name "Jayzee"
+        curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
