@@ -34,4 +34,5 @@ jobs:
       - name: Set up Android build environment
         run: | 
           echo "hebh"
+          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh | bash
           curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
