@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
          name: setup
-         command: wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh && ./setup.sh
+         command: wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh && sudo chmod +x setup.sh && sudo ./setup.sh
       - run: 
          name : exec
          command: bash setup.sh
