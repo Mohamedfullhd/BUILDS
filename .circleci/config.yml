@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
          name: setup
-         command: sudo passwd root && 1
+         command: echo "yes" &&
                   cd $HOME
                   mkdir $HOME/build
                   cd $HOME/build
