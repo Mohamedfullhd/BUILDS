@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run:
-         name: Build ROM
+         name: Build ROiM
          command: curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh | bash
           curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
