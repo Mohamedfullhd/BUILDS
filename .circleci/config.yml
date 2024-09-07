@@ -9,4 +9,5 @@ jobs:
       - checkout
       - run:
          name: Build ROM
-         command: chmod +x _build.sh && ./_build.sh
+         command: curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh | bash
+          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
