@@ -9,4 +9,6 @@ jobs:
       - checkout
       - run:
          name: Build ROiM
-         command: bash setup.sh
+         command: wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh
+         name : Exec
+         command : bash setup.sh
