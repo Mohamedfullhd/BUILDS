@@ -9,5 +9,7 @@ jobs:
       - checkout
       - run:
          name: Build ROiM
-         command: wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh | bash setup.sh
-          wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash build.sh
+         command: wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh
+                  bash setup.sh
+                  wget https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh
+                  bash build.sh
