@@ -26,8 +26,7 @@ jobs:
             gawk \
             flex \
             gettext \
-            unzip \
-            img2simg
+            unzip 
 
       - name: Set up Android build environment
         run: | 
