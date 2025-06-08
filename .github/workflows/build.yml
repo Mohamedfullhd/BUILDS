@@ -1,9 +1,7 @@
 name: Build Android ROM
 
 on:
-  push:
-    branches:
-      - main  # Trigger build on push to the main branch
+  workflow_dispatch:
 
 jobs:
   build:
