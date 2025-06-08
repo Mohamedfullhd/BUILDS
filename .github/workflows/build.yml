@@ -34,5 +34,5 @@ jobs:
       - name: Set up Android build environment
         run: | 
           echo "hbk"
-          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/SETUP/setup.sh | bash
-          curl https://raw.githubusercontent.com/Jayzee-Zee/build_scripts/CipherOS/build.sh | bash
+          curl https://raw.githubusercontent.com/Mohamedfullhd/idk/refs/heads/main/setup.sh | bash
+          curl https://raw.githubusercontent.com/Mohamedfullhd/idk/refs/heads/main/build.sh | bash
